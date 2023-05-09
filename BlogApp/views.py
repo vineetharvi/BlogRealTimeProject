@@ -88,5 +88,5 @@ def post_detail_view(request, year, month, day, post):
     else:
         form = CommentForm()
     return render(request, 'BlogApp/post_detail.html',
-                  {"post": post, 'form': form, 'comments': comments, 'csubmit': csubmit})
+                  {"post": post, 'form': form, 'comments': comments, 'csubmit': csubmit,'similar_posts':similar_posts})
 
